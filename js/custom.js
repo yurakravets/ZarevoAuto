@@ -163,7 +163,7 @@
 	});
 
 //ajax
-  $("#submit").click(function(){
+ /* $("#submit").click(function(){
       var name = $('#name').val();
       var phone = $('#phone').val();
       var email = $('#email').val();
@@ -219,7 +219,7 @@
           document.getElementById("error").innerHTML = "Please Fill All Detail";
       }
   });
-
+*/
 
 // for counter 
 		$('.timer').appear(function() {
