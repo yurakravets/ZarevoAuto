@@ -163,20 +163,18 @@
 	});
 
 //ajax
- /* $("#submit").click(function(){
+ $("#submit").click(function(){
       var name = $('#name').val();
       var phone = $('#phone').val();
       var email = $('#email').val();
       var subject = $('#subject').val();
       var message = $('#message').val();
-      var letters = /^[A-Za-z]+$/;
-      var number = /^[0-9]+$/;
       var mail_letters = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     
       if (name != "" && phone != "" && email != ""  && subject != ""  && message != "") {
-          if(name.match(letters)) { 
-              if(phone.match(number) && phone.length <= 10) {
+          if(name != "") {
+              if(phone != "" && phone.length <= 10) {
                   if(email.match(mail_letters)){
                       $.ajax({
                       method : 'post',
@@ -219,7 +217,6 @@
           document.getElementById("error").innerHTML = "Please Fill All Detail";
       }
   });
-*/
 
 // for counter 
 		$('.timer').appear(function() {
