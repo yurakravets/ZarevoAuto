@@ -172,9 +172,9 @@
       var mail_letters = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     
-      if (name != "" && phone != "" && email != ""  && subject != ""  && message != "") {
+      if (name != "" && phone != "" && email != "") {
           if(name != "") {
-              if(phone != "" && phone.length <= 10) {
+              if(phone != "") {
                   if(email.match(mail_letters)){
                       $.ajax({
                       method : 'post',

@@ -10,7 +10,8 @@ $subject=$_POST['subject'];
 
 $to = "yura.kravis@gmail.com";
 $subject = "Zarevo client";
-$txt = "Hello Admin: User Name: ".$first_name." Phone: ".$phone_number." email ".$email." message: ".$message." service: ".$subject."";
+$txt = "Нове звернення: \n Client Name: ".$first_name."\n Phone: ".$phone_number."\n email ".$email."\n message: ".$message."\n subject: ".$subject."";
+$headers = "From: info@site.com";
 
-mail($to,$subject,$txt);
+mail($to,$subject,$txt,$headers);
 ?>
