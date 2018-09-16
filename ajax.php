@@ -11,7 +11,6 @@ $subject=$_POST['subject'];
 $to = "yura.kravis@gmail.com";
 $subject = "Zarevo client";
 $txt = "Hello Admin: User Name: ".$first_name." Phone: ".$phone_number." email ".$email." message: ".$message." service: ".$subject."";
-$headers = "From: webmaster@example.com";
 
-echo mail($to,$subject,$txt,$headers);
+mail($to,$subject,$txt);
 ?>
